@@ -1,0 +1,12 @@
+.Home-body {
+  padding: 12px;
+  background-color: #662e91;
+  min-height: 100vh;
+  color: white;
+}
+.Display {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
