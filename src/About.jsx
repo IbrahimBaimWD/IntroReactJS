@@ -1,16 +1,18 @@
 import "./App.css";
 import React from "react";
 import { Link } from "react-router-dom";
+import { Center, Flex, Spacer } from "@chakra-ui/react";
 
 export default function About() {
   return (
-    <>
-      <div className="App-header">
-        <p>About</p>
+    <Center bg="gray.800" h="100vh" color="white" as="b" fontSize="2xl">
+      <Flex gap="2">
+        Page About
+        <Spacer />
         <Link to="/" className="App-link">
-          Back to Home
+          Back
         </Link>
-      </div>
-    </>
+      </Flex>
+    </Center>
   );
 }

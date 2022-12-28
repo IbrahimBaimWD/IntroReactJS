@@ -1,34 +1,17 @@
 import React from "react";
-import "./Home.css";
-import Lingkaran from "./components/Lingkaran";
-import Kotak from "./components/Kotak";
-import PersegiPanjang from "./components/PersegiPanjang";
-import Garis from "./components/Garis";
-
+import "./App.css";
+import { Center, Flex, Spacer } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
 export default function Home() {
   return (
-    <>
-      <div className="Home-body">
-        <div className="Display">
-          <PersegiPanjang name="Header" />
-        </div>
-
-        <div className="Display">
-          <Lingkaran name="Ada Photo" />
-          <Lingkaran />
-        </div>
-
-        <div className="Display">
-          <Garis />
-          <Garis />
-        </div>
-
-        <div className="Display">
-          <Kotak kotak="Instagram" />
-          <Kotak kotak="Facebook" />
-          <Kotak kotak="Twitter" />
-        </div>
-      </div>
-    </>
+    <Center bg="gray.800" h="100vh" color="white" as="b" fontSize="2xl">
+      <Flex gap="2">
+        React Js
+        <Spacer />
+        <Link to="/about" className="App-link">
+          go about
+        </Link>
+      </Flex>
+    </Center>
   );
 }
